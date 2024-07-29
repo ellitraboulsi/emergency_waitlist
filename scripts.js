@@ -8,7 +8,6 @@ function addPatient() {
     let severity = prompt("Enter severity level (low, medium, high):");
     let waitTime = prompt("Enter wait time in minutes:");
 
-    // Validate input
     if (!patientName || !severity || !waitTime || isNaN(waitTime)) {
         alert("Please enter valid patient information.");
         return;
@@ -19,16 +18,14 @@ function addPatient() {
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            // On success, update the patient list
             alert('Patient added successfully');
-            fetchPatients(); // Fetch and update the patient list
+            fetchPatients();
         }
     };
     xhr.send(`action=add&name=${encodeURIComponent(patientName)}&severity=${encodeURIComponent(severity)}&waitTime=${encodeURIComponent(waitTime)}`);
 }
 
 function checkStatus() {
-    // Get patient name from input
     let patientName = document.getElementById('patient-name').value.trim();
 
     if (!patientName) {
@@ -53,7 +50,6 @@ function checkStatus() {
 }
 
 function fetchPatients() {
-    // Fetch the list of patients from the server
     let xhr = new XMLHttpRequest();
     xhr.open('GET', 'server.php?action=list', true);
     xhr.onreadystatechange = function() {
@@ -86,9 +82,8 @@ function removePatient(patientName) {
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            // On success, refresh the patient list
             alert('Patient removed successfully');
-            fetchPatients(); // Fetch and update the patient list
+            fetchPatients();
         }
     };
     xhr.send(`action=remove&name=${encodeURIComponent(patientName)}`);
