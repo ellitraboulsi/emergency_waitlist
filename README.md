@@ -14,10 +14,10 @@ The Hospital Triage Application is designed to assist hospital staff in managing
 - Database: PostgreSQL
 
 ## Installation
-Prerequisites
-Web Server: Apache, Nginx, or similar with PHP support
-PHP: Version 7.4 or higher
-PostgreSQL: Version 9.5 or higher
+### Prerequisites
+- Web Server: Apache, Nginx, or similar with PHP support
+- PHP: Version 7.4 or higher
+- PostgreSQL: Version 9.5 or higher
 
 ## Setup
 Clone the Repository: 
