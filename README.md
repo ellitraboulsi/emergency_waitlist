@@ -28,12 +28,12 @@ cd emergency_waitlist
 Create a PostgreSQL database and a user with appropriate permissions.
 Use the following SQL script to create the necessary table:
 
-CREATE TABLE patients (
+sql ```CREATE TABLE patients (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     severity VARCHAR(50) NOT NULL,
     wait_time INTEGER NOT NULL
-);
+);```
 
 ## Configure the Database Connection
 Update the server.php file with your database credentials:
@@ -44,8 +44,8 @@ $username = 'your_username';
 $password = 'your_password';
 
 ## Run the Application
-Place the project files in your web server's root directory.
-Access the application via your web browser.
+- Place the project files in your web server's root directory.
+- Access the application via your web browser.
 
 ## Usage
 ### Adding Patients
@@ -54,7 +54,7 @@ Access the application via your web browser.
 - Checking Patient Status
 - Enter the patient's name in the "Check Status" section.
 - Click the "Check Status" button to view the patient's details.
-- 
+  
 ### Viewing All Patients
 - The main table displays all patients, sorted by severity and wait time.
 
