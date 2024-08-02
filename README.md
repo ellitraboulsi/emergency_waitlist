@@ -59,4 +59,6 @@ $password = 'your_password';
 - The main table displays all patients, sorted by severity and wait time.
 
 
+_______________________________________________
+
 This README provides an overview of the project, instructions for setup and usage. Be sure to replace placeholders like yourusername, your_host, your_dbname, your_username, your_password, and yourname@example.com with your actual information.
