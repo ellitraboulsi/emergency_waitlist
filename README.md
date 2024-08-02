@@ -33,7 +33,8 @@ Use the following SQL script to create the necessary table:
     name VARCHAR(255) NOT NULL,
     severity VARCHAR(50) NOT NULL,
     wait_time INTEGER NOT NULL
-);```
+);
+```
 
 ## Configure the Database Connection
 Update the server.php file with your database credentials:
