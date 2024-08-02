@@ -28,7 +28,7 @@ cd emergency_waitlist
 Create a PostgreSQL database and a user with appropriate permissions.
 Use the following SQL script to create the necessary table:
 
-```CREATE TABLE patients (
+``` CREATE TABLE patients (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     severity VARCHAR(50) NOT NULL,
