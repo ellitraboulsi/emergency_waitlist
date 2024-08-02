@@ -39,11 +39,12 @@ CREATE TABLE patients (
 
 ## Configure the Database Connection
 Update the server.php file with your database credentials:
-
+```
 $host = 'your_host';
 $dbname = 'your_dbname';
 $username = 'your_username';
 $password = 'your_password';
+```
 
 ## Run the Application
 - Place the project files in your web server's root directory.
