@@ -21,8 +21,10 @@ PostgreSQL: Version 9.5 or higher
 
 ## Setup
 Clone the Repository: 
-git clone https://github.com/yourusername/emergency_waitlist.git
+```
+git clone https://github.com/ellitraboulsi/emergency_waitlist.git
 cd emergency_waitlist
+```
 
 ## Database Setup
 Create a PostgreSQL database and a user with appropriate permissions.
