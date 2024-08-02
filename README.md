@@ -4,14 +4,14 @@
 The Hospital Triage Application is designed to assist hospital staff in managing emergency room patient flow. The application helps both staff and patients understand wait times and prioritizes treatment based on the severity of injuries and the length of time patients have been waiting.
 
 ## Features
-Patient Management: Staff can add patients, indicating their severity and wait time.
-Patient Status Check: Patients and staff can check the status of any patient by name.
-Administrative View: A full list of patients is displayed for administrative use, sorted by severity and wait time.
+- Patient Management: Staff can add patients, indicating their severity and wait time.
+- Patient Status Check: Patients and staff can check the status of any patient by name.
+- Administrative View: A full list of patients is displayed for administrative use, sorted by severity and wait time.
 
 ## Technologies Used
-Frontend: HTML, CSS, JavaScript
-Backend: PHP
-Database: PostgreSQL
+- Frontend: HTML, CSS, JavaScript
+- Backend: PHP
+- Database: PostgreSQL
 
 ## Installation
 Prerequisites
