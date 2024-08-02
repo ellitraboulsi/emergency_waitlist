@@ -4,45 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Triage Application</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Hospital Triage Application</h1>
-    </header>
-    
-    <main>
-        <section id="admin-section">
-            <h2>Admin Dashboard</h2>
-            <table id="patient-table">
-                <thead>
-                    <tr>
-                        <th>Patient Name</th>
-                        <th>Severity</th>
-                        <th>Wait Time (mins)</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Patient data will be populated here -->
-                </tbody>
-            </table>
-            <button id="add-patient-button">Add Patient</button>
-        </section>
-        
-        <section id="patient-section">
-            <h2>Patient Status</h2>
-            <p id="patient-info">Enter your details to see your status.</p>
-            <input type="text" id="patient-name" placeholder="Enter your name">
-            <button id="check-status-button">Check Status</button>
-            <div id="status-result"></div>
-        </section>
-    </main>
+    <h1>Hospital Triage System</h1>
 
-    <footer>
-        <p>&copy; 2024 Hospital Triage Application</p>
-    </footer>
+    <div id="add-patient">
+        <button id="add-patient-button">Add Patient</button>
+    </div>
 
-    <script src="scripts.js"></script>
+    <div id="check-status">
+        <input type="text" id="patient-name" placeholder="Enter patient name">
+        <button id="check-status-button">Check Status</button>
+        <p id="status-result"></p>
+    </div>
+
+    <h2>Current Patients</h2>
+    <table id="patient-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Severity</th>
+                <th>Wait Time (min)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Patient rows will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
